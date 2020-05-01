@@ -7,7 +7,6 @@ class Post < ActiveRecord::Base
 accepts_nested_attributes_for :categories, reject_if: proc { |attributes| attributes['name'].blank? }
 
 
-  # the below overrides the built-in setter of the "accepts..." to prevent dupes
 
   def categories_attributes=(category_attributes)
     category_attributes.values.each do |category_attribute|
