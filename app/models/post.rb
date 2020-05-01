@@ -20,4 +20,3 @@ accepts_nested_attributes_for :categories, reject_if: proc { |attributes| attrib
 
 
 end
-end
